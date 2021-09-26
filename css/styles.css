@@ -1,0 +1,29 @@
+#tasknameP{
+    font-size: 5px;
+}
+#topBar{
+    /* background-color: aquamarine; */
+    margin-left: 15px;
+}
+.taskmanager-heading > h4{
+    text-align: center;
+    color:brown;
+    font-size: 40px;
+    font-style: bold;
+    /* margin-right: 2oopx; */
+    float: right;
+}
+.navbar-collapse {
+    width: 100%;
+    background-color: burlywood;
+}
+
+ .card{                                     /* task cards  */ 
+    background-color: rgb(209, 217, 228);
+}
+#mainCardContainerDiv{                       /* cardholder div  */       
+    background-color: rgb(178, 178, 185);
+}
+#topBar{                                      /* Open Form Bar  */
+    background-color: rgb(79, 77, 82);
+}
