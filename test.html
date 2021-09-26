@@ -1,0 +1,25 @@
+<li class="card" style="min-width: 50vw">
+  <div class="card-body">
+    <p>#${id}</p>
+    <h5 class="card-title">Task Name: ${name}</h5>
+    <p class="card-text">Description: ${description}</p>
+    <p class="card-text">Assigned To: ${assignedTo}</p>
+    <p class="card-text">Due Date: ${dueDate}</p>
+    <div class="card-footer row">
+      <div class="col-6">
+        <p class="card-text"><b>Status: ${status}</b></p>
+      </div>
+      <div class="col-3">
+        <button id="${id}" class="btn btn-outline-success done-button">
+          Done
+        </button>
+      </div>
+
+      <div class="col-3">
+        <button id="${id}" class="btn btn-outline-danger delete-button">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</li>

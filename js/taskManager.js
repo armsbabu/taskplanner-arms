@@ -17,11 +17,14 @@ const createTaskHtml = (id, name, description, assignedTo, dueDate, status) => {
           Done
         </button>
       </div>
+
+
       <div class="col-3">
         <button id ="${id}"  class="btn btn-outline-danger delete-button">
           Delete
         </button>
       </div>
+
     </div>
   </div>
 </li>`;
@@ -83,6 +86,7 @@ class TaskManager {
     for (let i = 0; i < this.tasks.length; i++) {
       // Get the current task in the loop
       const task = this.tasks[i];
+      // console.log(task);
       // Format the date
       const date = new Date(task.dueDate);
       const formattedDate =
@@ -144,5 +148,26 @@ class TaskManager {
       this.currentID = Number(currentId);
       // console.log(typeof this.currentID);
     }
+  }
+  //delete task function
+
+  deleteTask(taskId) {
+    // Create an empty array and store it in a new variable, newTasks
+    const newTasks = [];
+
+    // Loop over the tasks
+    for (let i = 0; i < this.tasks.length; i++) {
+      // Get the current task in the loop
+      const task = this.tasks[i];
+
+      // Check if the task id is not the task id passed in as a parameter
+      if (task.id != taskId) {
+        // Push the task to the newTasks array
+        newTasks.push(task);
+      }
+    }
+
+    // Set this.tasks to newTasks
+    this.tasks = newTasks;
   }
 }
