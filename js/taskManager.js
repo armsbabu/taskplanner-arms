@@ -140,9 +140,9 @@ class TaskManager {
       const currentId = localStorage.getItem("currentId");
 
       //convert the currentid to a number and store it in out TaskManager
-      console.log(currentId);
+      // console.log(currentId);
       this.currentID = Number(currentId);
-      console.log(typeof this.currentID);
+      // console.log(typeof this.currentID);
     }
   }
 }
